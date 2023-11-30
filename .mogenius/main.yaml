@@ -1,0 +1,25 @@
+serviceType: GIT_REPOSITORY
+displayName: AngularDemo
+gitRepository: https://github.com/janlepsky/AngularDemo.git
+gitBranch: main
+dockerfileName: Dockerfile
+dockerContext: .
+k8sSettings:
+  limitCpuCores: 0.3
+  limitMemoryMB: 85
+  ephemeralStorageMB: 101
+  replicaCount: 1
+  deploymentStrategy: recreate
+  imagePullPolicy: IfNotPresent
+  probesOn: false
+envVars:
+  - name: testvariable
+    value: "123456"
+    type: PLAINTEXT
+ports:
+  - portType: HTTPS
+    internalPort: 8080
+    externalPort: 80
+    expose: true
+app: null
+
