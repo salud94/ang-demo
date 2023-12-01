@@ -1,0 +1,24 @@
+serviceType: GIT_REPOSITORY
+displayName: AngularDemo
+gitRepository: https://github.com/janlepsky/AngularDemo.git
+gitBranch: Dev
+dockerfileName: Dockerfile
+dockerContext: .
+k8sSettings:
+  limitCpuCores: 0.3
+  limitMemoryMB: 111
+  ephemeralStorageMB: 50
+  replicaCount: 1
+  deploymentStrategy: recreate
+  imagePullPolicy: IfNotPresent
+  probesOn: false
+envVars:
+  - name: keytothavault
+    type: KEY_VAULT
+ports:
+  - portType: HTTPS
+    internalPort: 8080
+    externalPort: 80
+    expose: true
+app: null
+
