@@ -12,10 +12,7 @@ k8sSettings:
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
-envVars:
-  - name: sweetchildomine
-    value: testo
-    type: PLAINTEXT
+envVars: []
 ports:
   - portType: HTTPS
     internalPort: 8080
