@@ -5,7 +5,7 @@ gitBranch: Dev
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
-  limitCpuCores: 0.2
+  limitCpuCores: 0.5
   limitMemoryMB: 10
   ephemeralStorageMB: 50
   replicaCount: 1
