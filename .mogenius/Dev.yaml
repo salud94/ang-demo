@@ -7,7 +7,7 @@ dockerContext: .
 k8sSettings:
   limitCpuCores: 0.2
   limitMemoryMB: 1
-  ephemeralStorageMB: 50
+  ephemeralStorageMB: 1
   replicaCount: 1
   deploymentStrategy: rolling
   imagePullPolicy: IfNotPresent
