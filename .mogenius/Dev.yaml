@@ -8,7 +8,7 @@ k8sSettings:
   limitCpuCores: 0.3
   limitMemoryMB: 80
   ephemeralStorageMB: 50
-  replicaCount: 1
+  replicaCount: 2
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
