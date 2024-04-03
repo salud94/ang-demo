@@ -6,9 +6,9 @@ dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
   limitCpuCores: 0.3
-  limitMemoryMB: 5
-  ephemeralStorageMB: 5
-  replicaCount: 3
+  limitMemoryMB: 80
+  ephemeralStorageMB: 50
+  replicaCount: 1
   deploymentStrategy: recreate
   imagePullPolicy: IfNotPresent
   probesOn: false
