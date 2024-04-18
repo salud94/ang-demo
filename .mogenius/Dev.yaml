@@ -6,7 +6,7 @@ dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
   limitCpuCores: 0.3
-  limitMemoryMB: 80
+  limitMemoryMB: 81
   ephemeralStorageMB: 50
   replicaCount: 1
   deploymentStrategy: recreate
