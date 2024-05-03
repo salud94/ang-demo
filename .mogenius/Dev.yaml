@@ -1,12 +1,12 @@
 serviceType: GIT_REPOSITORY
-displayName: AngularDemo
+displayName: AngularDemo2
 gitRepository: https://github.com/janlepsky/AngularDemo.git
 gitBranch: Dev
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
   limitCpuCores: 0.3
-  limitMemoryMB: 80
+  limitMemoryMB: 32
   ephemeralStorageMB: 50
   replicaCount: 1
   deploymentStrategy: recreate
