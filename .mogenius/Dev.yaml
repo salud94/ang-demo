@@ -1,5 +1,5 @@
 serviceType: Deployment
-displayName: repo11
+displayName: rebo2
 dockerfileName: Dockerfile
 dockerContext: .
 k8sSettings:
